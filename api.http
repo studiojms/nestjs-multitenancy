@@ -1,11 +1,30 @@
 GET http://localhost:3000/user
 
-###
+### Common user
 POST http://localhost:3000/user
 Content-Type: application/json
 
 {
   "name": "John Doe",
+  "email": "johndoe1@email.com",
+  "password": "password"
+}
+
+### Partner user
+POST http://localhost:3000/partner/user
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoepartner@partner.com",
+  "password": "password"
+}
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
   "email": "johndoe1@email.com",
   "password": "password"
 }

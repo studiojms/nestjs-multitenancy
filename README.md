@@ -17,6 +17,18 @@ $ npm install
 
 ## Running the app
 
+### DB Migration
+
+Make sure you have a .env file (copy .env.example)
+
+Run the command below to migrate the DB:
+
+```bash
+npx run migrate dev
+```
+
+### Starting the app
+
 ```bash
 # development
 $ npm run start
